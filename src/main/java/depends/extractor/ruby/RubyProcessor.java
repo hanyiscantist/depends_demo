@@ -32,6 +32,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import depends.entity.repo.BuiltInType;
+import depends.extractor.core.IncludedFileLocator;
 import depends.extractor.AbstractLangProcessor;
 import depends.extractor.FileParser;
 import depends.extractor.ParserCreator;

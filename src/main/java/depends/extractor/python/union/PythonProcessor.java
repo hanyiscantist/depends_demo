@@ -11,7 +11,7 @@ import depends.extractor.FileParser;
 import depends.extractor.python.BasePythonProcessor;
 import depends.extractor.python.PythonBuiltInType;
 import depends.extractor.python.PythonImportLookupStrategy;
-import depends.extractor.ruby.IncludedFileLocator;
+import depends.extractor.core.IncludedFileLocator;
 import depends.relations.ImportLookupStrategy;
 
 public class PythonProcessor extends BasePythonProcessor {

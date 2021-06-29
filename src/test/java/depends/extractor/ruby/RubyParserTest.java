@@ -7,6 +7,7 @@ import java.util.concurrent.Executors;
 
 import depends.entity.repo.EntityRepo;
 import depends.entity.repo.InMemoryEntityRepo;
+import depends.extractor.core.IncludedFileLocator;
 import depends.extractor.FileParser;
 import depends.extractor.ParserCreator;
 import depends.extractor.ParserTest;

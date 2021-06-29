@@ -40,7 +40,7 @@ import depends.entity.FileEntity;
 import depends.entity.repo.EntityRepo;
 import depends.extractor.FileParser;
 import depends.extractor.ParserCreator;
-import depends.extractor.ruby.IncludedFileLocator;
+import depends.extractor.core.IncludedFileLocator;
 import depends.relations.Inferer;
 import multilang.depends.util.file.FileUtil;
 public class JRubyFileParser implements FileParser {

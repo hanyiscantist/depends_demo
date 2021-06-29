@@ -14,7 +14,7 @@ import depends.entity.repo.EntityRepo;
 import depends.extractor.FileParser;
 import depends.extractor.python.PythonLexer;
 import depends.extractor.python.PythonParser;
-import depends.extractor.ruby.IncludedFileLocator;
+import depends.extractor.core.IncludedFileLocator;
 import depends.relations.Inferer;
 
 public class PythonFileParser implements FileParser {

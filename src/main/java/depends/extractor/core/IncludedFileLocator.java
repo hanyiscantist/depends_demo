@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-package depends.extractor.ruby;
+package depends.extractor.core;
 
 import java.io.File;
 import java.util.List;

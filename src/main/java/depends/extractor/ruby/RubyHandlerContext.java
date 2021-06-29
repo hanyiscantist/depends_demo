@@ -30,6 +30,7 @@ import depends.entity.repo.EntityRepo;
 import depends.extractor.FileParser;
 import depends.extractor.HandlerContext;
 import depends.extractor.ParserCreator;
+import depends.extractor.core.IncludedFileLocator;
 import depends.importtypes.FileImport;
 import depends.relations.Inferer;
 import multilang.depends.util.file.FileUtil;
