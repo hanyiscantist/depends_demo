@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-package depends.relations;
+package depends.util;
 
 import depends.deptypes.DependencyType;
 import depends.entity.*;
