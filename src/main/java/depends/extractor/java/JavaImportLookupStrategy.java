@@ -32,7 +32,7 @@ import depends.entity.Entity;
 import depends.entity.FileEntity;
 import depends.entity.PackageEntity;
 import depends.entity.repo.EntityRepo;
-import depends.extractor.UnsolvedBindings;
+import depends.entity.UnsolvedBindings;
 import depends.importtypes.Import;
 import depends.relations.ImportLookupStrategy;
 import depends.relations.Inferer;

@@ -13,7 +13,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import depends.entity.Entity;
 import depends.entity.FileEntity;
 import depends.entity.repo.EntityRepo;
-import depends.extractor.UnsolvedBindings;
+import depends.entity.UnsolvedBindings;
 import depends.importtypes.FileImport;
 import depends.importtypes.Import;
 import depends.relations.ImportLookupStrategy;

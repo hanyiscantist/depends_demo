@@ -1,4 +1,4 @@
-package depends.extractor;
+package depends.entity;
 
 import depends.entity.Entity;
 

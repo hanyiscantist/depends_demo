@@ -45,7 +45,7 @@ import depends.entity.repo.BuiltInType;
 import depends.entity.repo.EntityRepo;
 import depends.entity.repo.NullBuiltInType;
 import depends.extractor.AbstractLangProcessor;
-import depends.extractor.UnsolvedBindings;
+import depends.entity.UnsolvedBindings;
 import depends.importtypes.Import;
 
 public class Inferer {

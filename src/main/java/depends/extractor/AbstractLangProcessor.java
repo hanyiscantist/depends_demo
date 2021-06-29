@@ -41,6 +41,7 @@ import depends.entity.FileEntity;
 import depends.entity.repo.BuiltInType;
 import depends.entity.repo.EntityRepo;
 import depends.entity.repo.InMemoryEntityRepo;
+import depends.entity.UnsolvedBindings;
 import depends.generator.DependencyGenerator;
 import depends.matrix.core.DependencyMatrix;
 import depends.matrix.transform.OrderedMatrixGenerator;

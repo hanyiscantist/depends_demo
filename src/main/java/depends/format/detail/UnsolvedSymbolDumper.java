@@ -35,7 +35,7 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
-import depends.extractor.UnsolvedBindings;
+import depends.entity.UnsolvedBindings;
 import multilang.depends.util.file.strip.LeadingNameStripper;
 
 public class UnsolvedSymbolDumper{

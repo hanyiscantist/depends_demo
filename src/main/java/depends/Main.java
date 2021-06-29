@@ -33,7 +33,7 @@ import org.codehaus.plexus.util.StringUtils;
 import depends.addons.DV8MappingFileBuilder;
 import depends.extractor.AbstractLangProcessor;
 import depends.extractor.LangProcessorRegistration;
-import depends.extractor.UnsolvedBindings;
+import depends.entity.UnsolvedBindings;
 import depends.format.DependencyDumper;
 import depends.format.detail.UnsolvedSymbolDumper;
 import multilang.depends.util.file.path.DotPathFilenameWritter;
