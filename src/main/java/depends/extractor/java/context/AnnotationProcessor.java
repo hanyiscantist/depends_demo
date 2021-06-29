@@ -38,6 +38,7 @@ import org.codehaus.plexus.util.StringUtils;
 import depends.entity.ContainerEntity;
 import depends.entity.GenericName;
 import depends.extractor.java.JavaParser.AnnotationContext;
+import depends.format.json.JDataBuilder;
 
 public class AnnotationProcessor {
 
@@ -69,8 +70,9 @@ public class AnnotationProcessor {
 		try {
 			Object r = ctx;
 			String[] paths = toAnnotationPath.split("\\.");
+			JDataBuilder builder = new JDataBuilder();
 			for (String path : paths) {
-				r = invokeMethod(r, path);
+				r = builder.invokeMethod(r, path);
 				if (r == null)
 					return;
 			}
@@ -95,23 +97,6 @@ public class AnnotationProcessor {
 		} else {
 			if (r instanceof AnnotationContext)
 				collection.add((AnnotationContext) r);
-		}
-	}
-
-	private Object invokeMethod(Object r, String path) {
-		if (StringUtils.isEmpty(path))
-			return null;
-		if (r instanceof Collection) {
-			Collection<?> list = (Collection<?>) r;
-			return list.stream().map(item -> invokeMethod(item, path)).filter(item -> item != null)
-					.collect(Collectors.toSet());
-		}
-		try {
-			Method m = r.getClass().getMethod(path);
-			return m.invoke(r);
-		} catch (NoSuchMethodException | SecurityException | IllegalAccessException | IllegalArgumentException
-				| InvocationTargetException e) {
-			return null;
 		}
 	}
 
