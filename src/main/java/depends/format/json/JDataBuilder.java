@@ -51,23 +51,6 @@ public class JDataBuilder {
 		return depObject;
 	}
 
-	public Object invokeMethod(Object r, String path) {
-		if (StringUtils.isEmpty(path))
-			return null;
-		if (r instanceof Collection) {
-			Collection<?> list = (Collection<?>) r;
-			return list.stream().map(item -> invokeMethod(item, path)).filter(item -> item != null)
-					.collect(Collectors.toSet());
-		}
-		try {
-			Method m = r.getClass().getMethod(path);
-			return m.invoke(r);
-		} catch (NoSuchMethodException | SecurityException | IllegalAccessException | IllegalArgumentException
-				| InvocationTargetException e) {
-			return null;
-		}
-	}
-
 	private ArrayList<JCellObject> buildCellObjects(Collection<DependencyPair> dependencyPairs) {
 		ArrayList<JCellObject> cellObjects = new ArrayList<JCellObject>();
 
